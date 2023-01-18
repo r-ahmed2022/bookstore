@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable max-len */
 import React from 'react';
 import { useSelector } from 'react-redux';

@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import { createStore } from 'redux';
 import bookReducer from './books/books';
 

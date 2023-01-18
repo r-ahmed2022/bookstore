@@ -1,4 +1,5 @@
 import React from 'react';
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { useDispatch } from 'react-redux';
 // eslint-disable-next-line no-unused-vars
 import { addBook } from '../redux/books/books';
