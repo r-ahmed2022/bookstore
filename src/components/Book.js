@@ -1,7 +1,6 @@
 import React from 'react';
 
 export default function Book(props) {
-  // eslint-disable-next-line react/prop-types
   const { category, title, author } = props;
   return (
     <div className="book-section">

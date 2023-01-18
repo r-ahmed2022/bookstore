@@ -1,12 +1,9 @@
 import React from 'react';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { useDispatch } from 'react-redux';
-// eslint-disable-next-line no-unused-vars
 import { addBook } from '../redux/books/books';
 
 export default function AddBook() {
   const dispatch = useDispatch();
-  // const bookList = useSelector((state) => state.books);
   return (
     <form className="addbook-form" onSubmit={() => dispatch(addBook)}>
       <input
