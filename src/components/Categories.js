@@ -1,19 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { displayStatus } from '../redux/categories/categories';
 
 export default function Categories() {
-  const checkStatus = () => {
-    // eslint-disable-next-line no-undef
-    M.toast({ html: 'Page under Construction!' });
-  };
-  const styles = {
-    backgroundColor: '#0290FF',
-    border: 'none',
-    'border-radius': '10px',
+  const [status, setStatus] = useState('');
+  const dispatch = useDispatch();
+  const handleClick = () => {
+    const { payload } = dispatch(displayStatus());
+    setStatus(payload);
   };
 
   return (
     <div className="category-page">
-      <input type="button" style={styles} className="btn-status" value="Check Status" onClick={checkStatus} />
+      <button
+        type="button"
+        className="chk-status add-btn"
+        onClick={handleClick}
+      >
+        Check status
+      </button>
+      <h1 className="error-msg">{status}</h1>
     </div>
   );
 }
