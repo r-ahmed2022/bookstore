@@ -22,6 +22,7 @@
       "react/prop-types": "off",
       "no-param-reassign": 0,
       "react/prefer-stateless-function": 0,
+      "react/jsx-props-no-spreading": "off",
       "import/no-extraneous-dependencies": "off"
     },
     "ignorePatterns": [
