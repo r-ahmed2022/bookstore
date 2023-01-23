@@ -1,40 +1,21 @@
-import { v4 as uuidv4 } from 'uuid';
+import { createSlice } from '@reduxjs/toolkit';
 
-// action name
-const ADD_BOOK = 'bookStore/books/ADD_BOOK';
-const REMOVE_BOOK = 'bookStore/books/REMOVE_BOOK';
-// initial state
 const initialState = {
-  books: [
-    {
-      id: uuidv4(),
-      title: 'Bear Trap',
-      category: 'Action',
-      author: 'Hamid Gul',
-    }],
+  books: [],
 };
-// action creaters
-export const addBook = {
-  Type: ADD_BOOK,
-  payload: 'buy milk',
-};
-
-export const removeBook = (id) => ({
-  type: REMOVE_BOOK,
-  id,
-});
-
-const bookReducer = (state = initialState, action) => {
-  switch (action.type) {
-    case ADD_BOOK:
-      return {
-        books: [...state.books, action.payload],
-      };
-    case REMOVE_BOOK:
-      return state.filter((book) => book.item_id !== action.id);
-    default:
+const counterSlice = createSlice({
+  name: 'bookList',
+  initialState,
+  reducers: {
+    ADD_BOOK: (state, action) => {
+      state.books = [...state.books, action.payload];
       return state;
-  }
-};
-
-export default bookReducer;
+    },
+    REMOVE_BOOK: (state, action) => {
+      state.books = state.books.filter((item) => item.id !== action.payload);
+      return state;
+    },
+  },
+});
+export const { ADD_BOOK, REMOVE_BOOK } = counterSlice.actions;
+export default counterSlice.reducer;

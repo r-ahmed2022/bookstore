@@ -1,11 +1,11 @@
-/* eslint-disable import/no-extraneous-dependencies */
-import { createStore } from 'redux';
+import { configureStore } from '@reduxjs/toolkit';
 import bookReducer from './books/books';
+import categoryReducer from './categories/categories';
 
-const reducer = bookReducer;
-
-const store = createStore(reducer);
-store.subscribe(() => {
+const store = configureStore({
+  reducer: {
+    bookList: bookReducer,
+    categoryList: categoryReducer,
+  },
 });
-
 export default store;
