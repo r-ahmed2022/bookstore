@@ -77,6 +77,16 @@ h6 {
   margin: 0 5px;
 }
 
+.btn {
+  width: 90px;
+  padding: 1px 5px;
+  margin: 5px;
+  border: 0;
+  border-radius: 10px;
+  background: none;
+  font-size: 0.8rem;
+}
+
 .addbook-form {
   display: flex;
   justify-content: space-between;
@@ -104,10 +114,21 @@ input {
   border-radius: 10px;
 }
 
+.chk-status {
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
 .category-page {
-  margin: 2em 0;
-  min-width: 200px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  padding: 100px;
   align-items: center;
+}
+
+.error-msg {
+  margin: 20px 10px;
+  padding: 2px;
+  box-shadow: -2px -2px 2px 2px #ccc;
 }
