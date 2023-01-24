@@ -62,8 +62,6 @@ A Single Page bookstore App (SPA) that displays a books in the store, status of 
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
-
 <details>
   <summary>Client</summary>
   <ul>
@@ -76,8 +74,6 @@ A Single Page bookstore App (SPA) that displays a books in the store, status of 
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
 - **[Single Page application]**
 - **[Lightweight]**
 - **[React component]**
@@ -88,8 +84,6 @@ A Single Page bookstore App (SPA) that displays a books in the store, status of 
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
-
 - [Live Demo Link](https://r-ahmed2022.github.io/bookstore/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -98,7 +92,6 @@ A Single Page bookstore App (SPA) that displays a books in the store, status of 
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
 
 ### Prerequisites
 - Installation of Git
@@ -107,7 +100,7 @@ A Single Page bookstore App (SPA) that displays a books in the store, status of 
 - A working browser
 - Internet connection
 -[Text Editor(VScode Recommended)](https://code.visualstudio.com/)
-- Installation of Live Server plugging in Visual Studio Code
+- Installation of Live Server plugging in Visual Studio Code or run 'npm start' to run from console
 
 
 
@@ -121,23 +114,12 @@ Example command:
 
 ### Setup
 In order to run this project you need:
-1. Clone this repository by following the link below
-[]( https://github.com/r-ahmed2022/bookstore.git)
+1. Clone this repository to your desired location by typing this command on the terminal:
+ git clone []( https://github.com/r-ahmed2022/bookstore.git)
+2. Open the folder "bookstore and run `npm install` to install all necesary scripts,
+3. Run from your termminal, `npm start` to open the project in your browser.
+4. run npm start to open the project in browser
 
-2. Clone this repository to your desired folder:
-you@your-Pc-name:~$ cd <folder>
-
-3. Open the folder "bookstore and run `npm install` to install all necesary scripts,
-4. Run from your termminal, `npm start` to open the project in your browser.
-
-<!--
-Example commands:
-
-```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
-```
---->
 
 ### Install
 
@@ -199,8 +181,6 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
-
 👤 **Riyaz Ahmed**
 
 - GitHub: [@r-ahmed2022](https://github.com/r-ahmed2022)
@@ -212,19 +192,18 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
+ Describe 1 - 3 features you will add to the project.
 - [ ] **[BookList component]**
 - [ ] **[AddBook component]**
 - [ ] **[Book component]**
+- [ ] **[AddBook component]**
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
-
-Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
 
@@ -234,9 +213,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
-If you like this project...
+If you like this project then do share this project with your friends and don't forget to give a ⭐ star on it"
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -244,26 +221,12 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
 
 Microverse
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FAQ (optional) -->
-
-## ❓ FAQ <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
