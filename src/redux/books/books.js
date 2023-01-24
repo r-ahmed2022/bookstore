@@ -1,7 +1,14 @@
 import { createSlice } from '@reduxjs/toolkit';
+import { v4 as uuidv4 } from 'uuid';
 
 const initialState = {
-  books: [],
+  books: [{
+    id: uuidv4(),
+    title: 'Bear Trap',
+    category: 'Action',
+    author: 'Hamid Gul',
+  },
+  ],
 };
 const counterSlice = createSlice({
   name: 'bookList',
