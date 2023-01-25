@@ -1,17 +1,29 @@
-import { createSlice } from '@reduxjs/toolkit';
-import { v4 as uuidv4 } from 'uuid';
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
+const apiUrl = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/2kecdTt0T9jUNqwudIao/books';
+// Action
 const initialState = {
-  books: [{
-    id: uuidv4(),
-    title: 'Bear Trap',
-    category: 'Action',
-    author: 'Hamid Gul',
-  },
-  ],
+  books: [],
 };
+// eslint-disable-next-line react-hooks/rules-of-hooks
+export const ADD_BOOK = createAsyncThunk('ADD_BOOK', async (payload) => {
+  await fetch(apiUrl, {
+    method: 'POST',
+    headers: {
+      'content-type': 'application/json',
+    },
+    body: JSON.stringify(payload),
+  });
+});
+
+export const REMOVE_BOOK = createAsyncThunk('REMOVE_BOOK', async (payload) => {
+  await fetch(`${apiUrl}/${payload}`, {
+    method: 'DELETE',
+  });
+});
+
 const counterSlice = createSlice({
-  name: 'bookList',
+  name: 'editlist',
   initialState,
   reducers: {
     ADD_BOOK: (state, action) => {
@@ -24,5 +36,4 @@ const counterSlice = createSlice({
     },
   },
 });
-export const { ADD_BOOK, REMOVE_BOOK } = counterSlice.actions;
 export default counterSlice.reducer;
