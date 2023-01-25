@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
-// eslint-disable-next-line no-unused-vars
 import { ADD_BOOK } from '../redux/books/books';
-import { LIST_DATA } from '../redux/books/showBookList';
+// import { LIST_DATA } from '../redux/books/showBookList';
 
 export default function AddBook() {
   const [booklist, setBookList] = useState(
@@ -26,15 +25,13 @@ export default function AddBook() {
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(ADD_BOOK(booklist));
-    setBookList((prevstate) => (
+    setBookList(
       {
-        ...prevstate,
         title: '',
         author: '',
         category: '',
-      }
-    ));
-    dispatch(LIST_DATA());
+      },
+    );
   };
   return (
     <form

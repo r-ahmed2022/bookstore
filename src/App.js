@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import { LIST_DATA } from './redux/books/showBookList';
+import { LIST_DATA } from './redux/books/books';
 import Navbar from './components/Navbar';
 import Books from './components/BooksList';
 import Categories from './components/Categories';
