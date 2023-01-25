@@ -14,7 +14,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-   font-size: 0.8rem;
+  font-size: 0.8rem;
 }
 
 code {
@@ -100,6 +100,7 @@ h6 {
 .addbook {
   margin: 10px 5px;
 }
+
 .bookscontainer {
   display: flex;
   flex-direction: column;
