@@ -13,6 +13,7 @@ export default function AddBook() {
       category: '',
     },
   );
+
   const dispatch = useDispatch();
   const handleChange = (event) => {
     setBookList((prevbooklist) => ({
@@ -33,6 +34,7 @@ export default function AddBook() {
       },
     );
   };
+
   return (
     <form
       className="addbook-form"

@@ -4,10 +4,11 @@ import Book from './Book';
 import AddBook from './AddBook';
 
 function BooksList() {
-  const { list } = useSelector((state) => state?.booklist);
+  const { list } = useSelector((state) => state.booklist);
   if (!list) {
     return <h1>Loading books....</h1>;
   }
+
   const newList = Object.entries(list)?.map((data) => (
     <Book
       key={data[0]}
@@ -15,6 +16,7 @@ function BooksList() {
       {...data[1][0]}
     />
   ));
+
   return (
     <div className="bookscontainer">
       { newList }

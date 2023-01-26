@@ -1,16 +1,16 @@
 import React, { useEffect } from 'react';
-import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import { LIST_DATA } from './redux/books/books';
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Books from './components/BooksList';
 import Categories from './components/Categories';
 import './App.css';
+import { LIST_BOOKS } from './redux/books/books';
 
 function App() {
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(LIST_DATA());
+    dispatch(LIST_BOOKS());
   }, [dispatch]);
   return (
     <div className="container">
