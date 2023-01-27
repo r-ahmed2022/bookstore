@@ -31,7 +31,6 @@ function Book(props) {
               value="Remove"
               onClick={() => {
                 dispatch(REMOVE_BOOK(item_id));
-                window.location.reload(true);
               }}
             />
 
