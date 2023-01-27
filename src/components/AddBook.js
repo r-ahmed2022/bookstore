@@ -40,6 +40,7 @@ export default function AddBook() {
       className="addbook-form"
       onSubmit={handleSubmit}
     >
+
       <input
         type="text"
         maxLength={20}
@@ -62,7 +63,6 @@ export default function AddBook() {
         onChange={handleChange}
       />
       <select id="category" value={booklist.category} onChange={handleChange} name="category" className="browser-default">
-        <option value="">--Choose Category--</option>
         <option value="Action">Action</option>
         <option value="Thriller">Thriller</option>
         <option value="Fiction">Fiction</option>

@@ -9,7 +9,8 @@
   font-weight: 700;
   font-size: 1.2rem;
   color: #000;
-  background: none;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
 }
 
 .header-div {
