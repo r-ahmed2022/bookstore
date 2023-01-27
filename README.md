@@ -192,7 +192,9 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
+> Describe 1 - 3 features you will add to the project
 - [ ] **[BookList component]**
+- [ ] **[AddBook component]**
 - [ ] **[Book component]**
 - [ ] **[AddBook component]**
 
