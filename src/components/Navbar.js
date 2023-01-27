@@ -13,7 +13,7 @@ export default function Navbar() {
         </ul>
       </div>
       <div className="header-div">
-        <i className="material-icons blue-text">account_circle</i>
+        <i className="material-icons large blue-text">account_circle</i>
       </div>
     </nav>
   );

@@ -20,6 +20,10 @@
   color: #000;
 }
 
+.navbar .header-div i {
+  font-size: 2em;
+}
+
 .header-title {
   margin: 5px 20px;
   font-size: 2.3rem;
@@ -30,12 +34,16 @@
 .navlinks {
   display: flex;
   list-style: none;
+  align-items: flex-start;
   color: #000;
   margin-top: 10px;
+  font-weight: normal;
 }
 
 .navlinks .link {
   margin: 0 3px;
   padding: 0;
   color: #000;
+  font-size: 1em;
+  text-transform: uppercase;
 }
