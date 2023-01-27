@@ -1,3 +1,16 @@
+:root {
+  --bubble-gum-pink: #ff5ab7;
+  --black: #1e1e1e;
+  --pinkish-grey: #c7c7c7;
+  --very-light-pink: #c4c4c4;
+  --pale-grey: #f5f6fa;
+  --black-5: rgba(0, 0, 0, 0.05);
+  --fff: #fafafa;
+  --black-two: #121212;
+  --medium-blue: #307bbe;
+  --azure: #0290ff;
+}
+
 body {
   margin: 0;
   font-family:
@@ -14,7 +27,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 0.8rem;
+   font-size: 0.8rem;
 }
 
 code {
@@ -38,54 +51,105 @@ code {
 .book-section {
   width: 100%;
   height: auto;
-  box-shadow: -0.5px -0.5px 1px 1px #ccc;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
   margin: 20px 0;
-  padding: 10px;
+  padding: 20px 10px;
 }
 
 .book-info {
   display: flex;
+  max-width: 20%;
+  height: 140px;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: end;
   align-items: start;
+  flex: 1 1 0;
 }
 
 .actions {
   list-style: none;
   display: flex;
-  padding: 2px 5px;
+  padding: 2px 0;
+  margin: 5px 0;
 }
 
-h2,
-h3,
-h6 {
-  font-weight: 700;
-  margin: 10px;
-}
+
 
 .book-title {
+   width: 15.313rem;
+   height: 1.813rem;
+   margin: 0.188rem 10.188rem 0 0;
+   font-family: RobotoSlab;
+   font-size: 1.375rem;
+   font-weight: bold;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: normal;
+   letter-spacing: -0.2px;
+   color: var(--black-two);
+   margin-top: 3px;
+}
+
+.Text-Style-6 {
+  font-family: RobotoSlab;
+  font-size: 1.375rem;
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  color: var(--black-two);
+}
+
+.Text-Style-7 {
+  font-family: RobotoSlab;
+  font-size: 0.813rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black-two);
+}
+
+
+.actions > li {
+  border-right: 2px;
   margin: 0;
   padding: 0;
 }
 
-.actions > li {
-  border-right: 2px;
-  margin: 0 5px;
-  padding: 0;
+.author-info {
+  width: 6.688rem;
+  height: 1.188rem;
+  margin: 0.25rem 0 0;
+  padding-left: 0.2rem;
+  font-family: RobotoSlab;
+  font-size: 1rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+
 }
 
-.author-info {
-  margin: 0 5px;
-}
 
 .btn {
-  width: 90px;
+  width: auto;
   padding: 1px 5px;
-  margin: 5px;
+  margin: 3px;
   border: 0;
   border-radius: 10px;
   background: none;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
+  font-weight: 700;
 }
 
 .addbook-form {
@@ -100,16 +164,26 @@ h6 {
 .addbook {
   margin: 10px 5px;
 }
-
 .bookscontainer {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
 
-#category {
-  width: auto;
-  height: auto;
+.category {
+    width: 3.063rem;
+    height: 1.125rem;
+    margin: 3px 2.438rem 0.7rem 0;
+    opacity: 0.5;
+    font-family: Montserrat;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.6rem;
+    letter-spacing: normal;
+    color: var(--black-two);
+
 }
 
 input[type="text"] {
@@ -148,3 +222,207 @@ input[type="text"] {
   padding: 2px;
   box-shadow: -2px -2px 2px 2px #ccc;
 }
+
+.circle-div {
+  display: flex;
+  width: 20%;
+  height: 140px;
+  justify-content: start;
+  align-items: center;
+  flex: 0 1 100px;
+
+}
+
+.Oval-2 {
+  width: 4.25rem;
+  height: 4.25rem;
+  border-style: solid;
+  border-width: 5px;
+  border-image-source: linear-gradient(to bottom,  var(--medium-blue), #379cf6);
+  border-image-slice: 1;
+}
+
+.percent-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.-Percent-Complete {
+  width: 4.25rem;
+  height: 2.438rem;
+  margin: 0.063rem 5.75rem 0 0.688rem;
+  font-family: Montserrat;
+  font-size: 2rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black-two);
+}
+.Completed {
+  width: 5rem;
+  height: 1.125rem;
+  margin: 0.438rem 4.938rem 0.75rem 0.75rem;
+  opacity: 0.5;
+  font-family: Montserrat;
+  font-size: 0.875rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black-two);
+}
+
+.progress-div {
+   display: flex;
+  height: 140px;
+   flex-direction: column;
+   align-items: start;
+   justify-content: end;
+
+}
+
+.Current-Chapter {
+  width: 6.688rem;
+  height: 1.125rem;
+  margin: 0.063rem 4.813rem 0.4rem 3.688rem;
+  opacity: 0.5;
+  font-family: RobotoSlab;
+  font-size: 1rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black-two);
+}
+
+.Current-Lesson {
+  width: 6.688rem;
+  height: 1.313rem;
+  margin: 0.063rem 4.813rem 0.4rem 3.688rem;
+  font-family: RobotoSlab;
+  font-size: 1rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  color: var(--black-two);
+}
+
+.Rectangle-2 {
+  width: 9.5rem;
+  height: 2.063rem;
+  margin: 0.75rem 0 0.563rem 3.688rem;
+  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+  border-radius: 3px;
+  background-color: #0290ff;
+}
+
+.Update-progress {
+  width: 8.938rem;
+  height: 1.125rem;
+  font-family: RobotoSlab;
+  font-size: 0.813rem;
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
+}
+
+.Text-Style-2 {
+  font-family: Montserrat;
+  font-size: 0.875rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black-two);
+}
+
+.Text-Style-4 {
+  font-family: RobotoSlab;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  color: var(--black-two);
+}
+
+.Rectangle-3 {
+  width: 7.625rem;
+  height: 4.62rem;
+  padding: 0.62rem 0.625rem 0.75rem 0.75rem;
+}
+
+@media only screen and (max-width: 500px ) {
+  .book-section {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .book-info {
+    width: 100%;
+    justify-content: center;
+    align-items:center;
+  }
+    .book-info h2, h6 {
+      margin: 0;
+      padding: 0;
+      align-self: start;
+    }
+
+    .progress-div {
+      justify-content: space-evenly;
+      align-items: center;
+     }
+
+     .Rectangle-2 {
+      align-self: center;
+      width: 11.5rem;
+      height: 2.063rem;
+      margin: 0.75rem 0 3.688rem;
+      padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+      border-radius: 3px;
+      background-color: #0290ff;
+    }
+
+    .Rectangle-3 {
+      width: 7rem;
+      height: 4.62rem;
+      padding: 0.62rem 0.625rem 0 0;
+    }
+   .circle-div {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+ 
+  }
+  .percent-div {
+    align-self: center;
+    padding-left: 70px;
+  }
+    .Current-Lesson {
+      margin: 0 auto;
+    }
+
+    .book-title {
+      margin: 0 auto;
+      padding: 0 auto;
+    }
+     }
